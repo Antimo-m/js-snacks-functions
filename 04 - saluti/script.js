@@ -1,13 +1,17 @@
-/* Scrivi una funzione che accetti una stringa contenente un nome e restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]") */
+/* Scrivi una funzione che accetti una stringa contenente un nome 
+e restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]") */
 
-const name = 'Mario';
+
 
 
 // Dichiara la funzione qui.
-
-
-// Invoca la funzione qui e stampa il risultato in console
+function saluto(name){
+    let nomeCorretto = name.charAt(0).toUpperCase() + name.slice(1);
+    return "Ciao, " + nomeCorretto + ", come stai"
+}
 
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+let utente= prompt("inserisci qui il tuo nome")
+console.log(saluto(utente))
